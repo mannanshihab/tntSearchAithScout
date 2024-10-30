@@ -34,9 +34,12 @@ To prevent your search indexes being commited to your project repository, add th
 
     /storage/*.index
 
-add the Searchable trait to your models that you want to make searchable. Additionaly, define the fields you want to make searchable by defining the
-
 The asYouType option can be set per model basis, see the example below.
+
+## Usage
+
+After you have installed scout and the TNTSearch driver, you need to add the Searchable trait to your models that you want to make searchable. Additionaly, define the fields you want to make searchable by defining the toSearchableArray method on the model:
+
 
     public $asYouType = true;
 
